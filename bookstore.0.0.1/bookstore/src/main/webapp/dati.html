@@ -1,0 +1,249 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<title>Web UI - Frontend</title>
+
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 		
+ 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 		
+ 	</head>
+ 	<body>
+ 		<header class="jumbotron  bg-dark text-white " style="margin-bottom:0px; padding:32px;" >
+ 			<h1><img src="./images/logoBooks.png" style="width:50px;margin-top:-5px;" /> BOOKSTORE</h1> 		
+ 		</header>
+ 		
+ 		<nav> 			
+ 			<ul class="nav justify-content-end bg-info text-white rounded" >
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="prodotti.html">Prodotti</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="ordini.html">Ordini</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="carrello.html">Carrello</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="dati.html">Profilo</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="index.html">Esci</a>
+			  </li>
+			</ul>
+ 			
+ 		</nav>
+ 		
+ 		<main class="container-fluid">
+
+ 		<!-- CONSIGLIATO IL <main class="container"> E NON IL FLUID -->
+ 		
+	 		<div>
+	 		<div class="alert alert-info alert-dismissible fade show" role="alert">
+				  <strong>Dati personali</strong> 
+	        </div>
+	    
+			<div class="row align-items-center mb-3"  >
+ 				<div class="col-6">
+ 					<label>
+ 						Cognome: 
+ 					</label>
+ 					<h6>
+ 					
+ 				    	Rossi
+ 					</h6>
+ 				</div>
+ 				<div class="col-6">	
+ 					<label>
+ 						Nome: 
+ 					</label>
+ 					<h6>
+ 				    	Mario	
+ 					</h6>
+ 				</div>
+ 			 </div>
+ 			
+
+ 			
+ 			<div class="row align-items-center mb-3" >
+ 				<div class="col-3">
+ 					<label>
+ 						Codice fiscale: 
+ 					</label>
+ 					<h6>
+ 				    	codice fiscale
+ 					</h6>
+ 				</div>
+ 				<div class="col-3">	
+ 					<label>
+ 						PIva: 
+ 					</label>
+ 					<h6>
+ 				    	piva
+ 					</h6>
+
+ 				</div>
+ 				<div class="col-6">
+ 					<label>
+ 						E-mail: 
+ 					</label>
+ 					<h6>
+ 				    	email
+ 					</h6>
+ 				</div>
+ 			</div>
+ 			
+ 			
+ 			<div class="row align-items-center mb-3" >
+ 				<div class="col-4">
+ 					<label>
+ 						Nazione: 
+ 					</label>
+ 					<h6>
+ 				    	nazione
+ 					</h6>
+ 				</div>
+ 				<div class="col-4">	
+ 					<label>
+ 						Provincia: 
+ 					</label>
+ 					<h6>
+ 				    	Provincia
+ 					</h6>
+ 				</div>
+ 				<div class="col-4">
+ 					<label>
+ 						Città: 
+ 					</label>
+ 					<h6>
+ 				    	città
+ 					</h6>
+ 				</div>
+ 			</div>
+ 			
+ 			
+ 			<div class="row align-items-center mb-3" >
+ 				<div class="col-3">
+ 					<label>
+ 						CAP: 
+ 					</label>
+ 					<h6>
+ 				    	cap
+ 					</h6>
+ 				</div>
+ 				<div class="col-9">	
+ 					<label>
+ 						Indirizzo: 
+ 					</label>
+ 					<h6>
+ 				    	indirizzo
+ 					</h6>
+ 				</div>
+ 			</div>
+ 			
+ 			
+ 			<div class="row align-items-center mb-5" >
+			 				<div class="col-4">
+			 					<label>
+			 						Numero di telefono: 
+			 					</label>
+			 					<h6>
+			 				    	Numero di telefono:
+			 					</h6>
+			 				</div>
+			 				<div class="col-4">	
+			 					<label>
+			 						Username: 
+			 					</label>
+			 					<h6>
+			 				    	username
+			 					</h6>
+			 				</div>
+			 				<div class="col-4">	
+			 				 	
+			 				 	<button type="button" class="btn btn-success">Modifica dati</button>	 				
+		 					 	<button type="button" class="btn btn-danger">Cambia password</button>
+		 					 
+			 				</div>
+			 </div>
+			 
+			 <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+				  Recapiti
+	        </div>
+			 
+		<table class="table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Tipo</th>
+		      <th scope="col">Cognome e nome</th>
+		      <th scope="col">Indirizzo</th>
+		      <th scope="col">Cap</th>
+		      <th scope="col">Citta</th>
+		      <th scope="col">Provincia</th>
+		      <th scope="col">Nazione</th>
+		      <th scope="col">Tel</th>
+		      <th scope="col">#</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>Spedizione</td>
+		      <td>cognome e nome</td>
+		      <td>indirizzo1</td>
+		      <td>cap1</td>
+		      <td>citta1</td>
+		      <td>prov1</td>
+		      <td>nazione1</td>
+		      <td>tel1</td>
+		      <td><a class="badge badge-warning">Modifica</a></td>
+		    </tr> 
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>Fatturazione</td>
+		      <td>cognome e nome</td>
+		      <td>indirizzo2</td>
+		      <td>cap2</td>
+		      <td>citta2</td>
+		      <td>prov2</td>
+		      <td>nazione2</td>
+		      <td>tel2</td>
+		      <td><a class="badge badge-warning">Modifica</a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>Spedizione</td>
+		      <td>cognome e nome</td>
+		      <td>indirizzo3</td>
+		      <td>cap3</td>
+		      <td>citta3</td>
+		      <td>prov3</td>
+		      <td>nazione3</td>
+		      <td>tel3</td>
+		      <td><a class="badge badge-warning">Modifica</a></td>
+		    </tr>
+		    <tr>
+		    	<td scope="row"><a class="btn btn-secondary"><b class="text-white">+</b></a><td> 
+		    </tr>
+		  </tbody>
+		</table>
+		
+ 		</main>
+ 		<footer class="jumbotron bg-dark text-white">
+ 		
+ 			<span class="">
+	 		Acme Spa <br />
+			Viale Italia, 69 -	00000 Noplace (XX) ITALY - Phone +39 02 00000000<br />  
+			P.I. Reg. Imprese Cod. Fisc. IT 000000000 - R.E.A. XX 00000 - Cap. Soc. Euro 1.000.000,00 i.v.
+			</span>
+		 
+ 			
+	 	</footer>
+ 	</body>
+ </html>
+ 

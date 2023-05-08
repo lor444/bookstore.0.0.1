@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<title>Web UI - Frontend</title>
+
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 		
+ 	</head>
+ 	<body>
+ 		<header class="jumbotron  bg-dark text-white " style="margin-bottom:0px; padding:32px;" >
+ 			<h1><img src="./images/logoBooks.png" style="width:50px;margin-top:-5px;" /> BOOKSTORE</h1> 		
+ 		</header>
+ 		<main class="container">
+ 		
+			<form class="needs-validation" novalidate name="formRegistrazione" id="formRegistreazione" method="post" action="./prodotti.html">
+
+					<div class="form-row">
+						<div class="col-6 mb-3">
+							<label for="surname">Cognome</label>
+							<input type="text" name="cognome" class="form-control" id="surname" placeholder="Cognome" required >
+							<div class="invalid-tooltip">
+								Inserire un cognome
+							</div>
+						</div>
+						<div class="col-6 mb-3">
+							<label for="name">Nome</label>
+							<input type="text" name="nome" class="form-control" id="name" placeholder="Nome" required >
+							<div class="invalid-tooltip">
+								Inserire un nome
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-3 mb-3">
+							<label for="codFiscale">Codice Fiscale</label>
+							<input type="text" name="codiceFiscale" class="form-control" id="codFiscale" aria-describedby="inputGroupPrepend" placeholder="Codice Fiscale" required >
+							<div class="invalid-tooltip">
+								Inserire un codice fiscale
+							</div>
+						</div>
+						<div class="col-3 mb-3">
+							<label for="pIva">Partita IVA</label>
+							<input type="text" name="partitaIva" class="form-control" id="pIva" placeholder="Partita IVA" >
+						</div>
+						<div class="col-6 mb-3">
+							<label for="mail">Email</label>
+							<input type="text" name="email" class="form-control" id="mail" placeholder="Email" required >
+							<div class="invalid-tooltip">
+								Inserire email
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						
+						<div class="col-12 mb-3">
+							<label for="indirizzo">Indirizzo</label>
+							<input type="text" name="indirizzo"  class="form-control" id="indirizzo" placeholder="Indirizzo" required >
+							<div class="invalid-tooltip">
+								Inserire indirizzo
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="form-row">
+						<div class="col-3 mb-3">
+							<label for="cap">CAP</label>
+							<input type="text"  name="cap" class="form-control col-xs-2" id="cap" placeholder="CAP" required >
+							<div class="invalid-tooltip">
+								Inserire CAP
+							</div>
+						</div>
+						<div class="col-4 mb-3" >
+							<label for="city">Citt&agrave;</label>
+							<input type="text" name="citta"  class="form-control col-xs-2" id="citta" placeholder="Citta'" required >
+							<div class="invalid-tooltip">
+								Indicare una citt&agrave;
+							</div>
+						</div>
+						
+						
+						<div class="col-2 mb-3">
+							<label for="provincia">Provincia</label>
+							<input type="text" name="provincia"  class="form-control col-xs-2" id="provincia" placeholder="Provincia" required >
+							<div class="invalid-tooltip">
+								Indicare una provincia
+							</div>
+						</div>
+						
+						<div class="col-3 mb-3">
+							<label for="nazione">Nazione</label>
+							<input type="text" name="nazione" value="Italia"  class="form-control col-xs-2" id="nazione" placeholder="Nazione" />
+						</div>
+						
+					</div>
+					
+					<div class="form-row">
+						<div class="col-4 mb-3">
+							<label for="telefono">Telefono</label>
+							<input type="text" name="telefono"  class="form-control" id="telefono" placeholder="Numero di telefono" >
+						</div>
+						<div class="col-8 form-check mb-3 text-center pt-5">
+							<input name="privacy" class="form-check-input" type="checkbox" id="privacyCheck" required>
+							<label class="form-check-label" for="privacyCheck">Accetto le condizioni sulla privacy</label>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-6 mb-3">
+							<label for="username">Username</label>
+							<input type="text"  name="username"  class="form-control" id="username" placeholder="Username" required >
+							<div class="invalid-tooltip">
+								Inserire username
+							</div>
+						</div>
+						<div class="col-6 mb-3">
+							<label for="password">Password</label>
+							<input type="password" name="userpass" class="form-control" id="password" placeholder="Password" required>
+							<div class="invalid-tooltip">
+								Inserire password
+							</div>
+						</div>
+					</div>
+				<div class="form-row pt-2">
+					<div class="col-3"></div>
+					<div class="col-3">
+						<a href="./index.html" class="btn btn-warning w-100" >Annulla</a>
+					</div>
+					<div class="col-3">
+						<input type="submit" class="btn btn-primary w-100" value="Registra" />						
+					</div>
+					<div class="col-3"></div>
+				</div>
+				 
+			</form> 		
+ 		<br />
+ 		</main>
+ 		<footer class="jumbotron bg-dark text-white">
+ 		
+ 			<span class="">
+	 		Acme Spa <br />
+			Viale Italia, 69 -	00000 Noplace (XX) ITALY - Phone +39 02 00000000<br />  
+			P.I. Reg. Imprese Cod. Fisc. IT 000000000 - R.E.A. XX 00000 - Cap. Soc. Euro 1.000.000,00 i.v.
+			</span>
+		 
+ 			
+	 	</footer>
+ 	</body>
+ </html>
+ 
